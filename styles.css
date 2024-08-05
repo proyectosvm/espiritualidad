@@ -1,0 +1,175 @@
+/* Estilos del header */
+header {
+    background: #87CEEB;
+    color: black;
+    padding: 15px 0;
+    text-align: center;
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icon {
+    margin: 0 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.social-icon:hover {
+    color: #555;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+main {
+    flex: 1;
+    padding: 20px 10px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.left-container, .right-container, .container section {
+    flex: 1;
+    margin: 10px;
+}
+
+.media-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.media-container iframe, .media-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover; /* Asegura que la imagen o video cubra el contenedor sin distorsionarse */
+}
+
+section {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-bottom: 10px;
+    color: #87CEEB;
+}
+
+section .section-image {
+    width: 100%;
+    height: 240px; /* Ajusta la altura para que sea igual para todas las imágenes */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: opacity 0.3s ease;
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+}
+
+section .section-image:hover {
+    opacity: 0.7;
+}
+
+section p {
+    margin-bottom: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #87CEEB;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #7EC0EE;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.whatsapp-button:hover {
+    background: #1EBE55;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-container, .right-container {
+        width: 100%;
+    }
+
+    .media-container {
+        padding-top: 56.25%; /* 16:9 Aspect Ratio para mantener la proporción */
+    }
+}
